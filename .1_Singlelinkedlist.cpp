@@ -152,7 +152,7 @@ public:
         while (searchptr != NULL)
         {
             if (element == searchptr->data)
-                return searchptr;
+                return searchptr != nullptr;
             searchptr = searchptr->nextAddress;
         }
         return NULL;
